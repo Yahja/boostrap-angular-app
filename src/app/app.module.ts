@@ -1,6 +1,11 @@
+// import { BrowserModule } from '@angular/platform-browser';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { JsonpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgModule } from '@angular/core';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NgMenuTopComponent } from './ng-menu-top/ng-menu-top.component';
@@ -11,7 +16,9 @@ import { NgMenuTopComponent } from './ng-menu-top/ng-menu-top.component';
     NgMenuTopComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule, JsonpModule, NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
