@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class NgMenuTopComponent implements OnInit {
 
   model = {
-    left: true,
-    middle: false,
-    right: false
+    home: false,
+    about: false,
+    feature: false,
+    work: false,
+    team: false,
+    pricing: false,
+    blog: false,
+    contact: false
   };
 
   constructor() { }
