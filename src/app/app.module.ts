@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { NgMenuTopComponent } from './ng-menu-top/ng-menu-top.component';
 import { NgbCarouselComponent } from './ngb-carousel/ngb-carousel.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,7 @@ import { NgbCarouselComponent } from './ngb-carousel/ngb-carousel.component';
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule, JsonpModule, NgbModule.forRoot()
+    ReactiveFormsModule, JsonpModule, NgbModule.forRoot(), AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
