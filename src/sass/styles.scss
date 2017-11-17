@@ -1,5 +1,14 @@
-$fontapp: Open Sans, sans-serif;
+@import 'fonts.scss';
+$fontapp: 'Comfortaa', cursive;
+$fontmenu:  'Open Sans', sans-serif;
 
 body{
 	font-family: $fontapp;
+	header{
+		.social-icons{
+			z-index: 1031;
+			position: absolute;
+			right: 0px;
+		}
+	}
 }
