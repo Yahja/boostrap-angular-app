@@ -93,19 +93,55 @@ body {
   font-family: "Comfortaa", cursive; }
   body header .social-icons {
     z-index: 1031;
-    position: absolute;
+    position: fixed;
     right: 28px;
-    top: 24px;
-    color: #fff; }
+    top: 24px; }
+    body header .social-icons a {
+      margin: 0px 5px;
+      color: #fff;
+      text-decoration: none; }
+      body header .social-icons a:hover {
+        color: #50E3C2; }
   body header nav.navbar {
     font-family: "Open Sans", sans-serif;
     background-color: rgba(0, 0, 0, 0.35);
-    padding: 0.975rem 1rem; }
-    body header nav.navbar .btn-primary {
-      background-color: rgba(0, 0, 0, 0);
-      border: none; }
-    body header nav.navbar .btn {
+    padding: 0.975rem 1rem;
+    width: 100%; }
+    body header nav.navbar .menu-top {
+      position: absolute;
+      width: 100%; }
+      body header nav.navbar .menu-top .btn-primary {
+        background-color: rgba(0, 0, 0, 0);
+        border: none; }
+      body header nav.navbar .menu-top .btn {
+        text-transform: uppercase;
+        font-size: 12px; }
+      body header nav.navbar .menu-top .focus {
+        box-shadow: none;
+        text-decoration: line-through #50E3C2; }
+  body .carousel .carousel-inner .carousel-item .carousel-caption {
+    top: 40%; }
+    body .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+      letter-spacing: 1px;
+      line-height: 36px; }
+    body .carousel .carousel-inner .carousel-item .carousel-caption a.btn-more {
+      background-color: #50E3C2;
+      border-radius: 50px;
+      font-family: "Open Sans", sans-serif;
       text-transform: uppercase;
-      font-size: 12px; }
+      font-size: 12px;
+      padding: .5rem 2rem;
+      margin-top: 30px; }
+      body .carousel .carousel-inner .carousel-item .carousel-caption a.btn-more:hover {
+        background-color: #333;
+        cursor: pointer; }
+  body .carousel .carousel-control-prev .carousel-control-prev-icon {
+    content: 'f2ca';
+    background-image: none;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: #000; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,27 +3,83 @@ $fontapp: 'Comfortaa', cursive;
 $fontmenu:  'Open Sans', sans-serif;
 $font-title: 'Oleo Script';
 
+$magenta: #50E3C2;
+
 body{
 	font-family: $fontapp;
 	header{
 		.social-icons{
 			z-index: 1031;
-			position: absolute;
+			position: fixed;
 			right: 28px;
 			top: 24px;
-			color: #fff;
+			a{
+				margin: 0px 5px;
+				color: #fff;
+				text-decoration: none;
+				&:hover{
+					color: $magenta;
+				}
+			}
 		}
 		nav.navbar{
 			font-family: $fontmenu;
 			background-color: rgba(000,000,000,0.35);
 			padding: 0.975rem 1rem; 
-			.btn-primary{
-				background-color: rgba(000,000,000,0.0);
-				border: none;
+			width: 100%;
+			.menu-top{
+				position: absolute;
+				width: 100%;
+				.btn-primary{
+					background-color: rgba(000,000,000,0.0);
+					border: none;
+				}
+				.btn{
+					text-transform: uppercase;
+					font-size: 12px;
+				}
+				.focus{
+					box-shadow: none;
+					text-decoration: line-through $magenta;
+				}
 			}
-			.btn{
-				text-transform: uppercase;
-				font-size: 12px;
+		}
+	}
+	.carousel{
+		.carousel-inner{
+			.carousel-item{
+				.carousel-caption{
+					top: 40%;
+					h3{
+						letter-spacing: 1px;
+						line-height: 36px;
+
+					}
+					a.btn-more{
+						background-color: $magenta;
+						border-radius: 50px;
+						font-family: $fontmenu;
+						text-transform: uppercase;
+						font-size: 12px;
+						padding: .5rem 2rem;
+						margin-top: 30px;
+						&:hover{
+							background-color: #333;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		.carousel-control-prev{
+			.carousel-control-prev-icon{
+				content: 'f2ca';
+				background-image: none;
+				background-color: #fff;
+				border-radius: 50%;
+				width: 20px;
+				height: 20px;
+				color: #000;
 			}
 		}
 	}
