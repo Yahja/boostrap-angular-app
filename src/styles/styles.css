@@ -94,6 +94,18 @@ body {
   body header .social-icons {
     z-index: 1031;
     position: absolute;
-    right: 0px; }
+    right: 28px;
+    top: 24px;
+    color: #fff; }
+  body header nav.navbar {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 0.975rem 1rem; }
+    body header nav.navbar .btn-primary {
+      background-color: rgba(0, 0, 0, 0);
+      border: none; }
+    body header nav.navbar .btn {
+      text-transform: uppercase;
+      font-size: 12px; }
 
 /*# sourceMappingURL=styles.css.map */

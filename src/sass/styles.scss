@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 $fontapp: 'Comfortaa', cursive;
 $fontmenu:  'Open Sans', sans-serif;
+$font-title: 'Oleo Script';
 
 body{
 	font-family: $fontapp;
@@ -8,7 +9,22 @@ body{
 		.social-icons{
 			z-index: 1031;
 			position: absolute;
-			right: 0px;
+			right: 28px;
+			top: 24px;
+			color: #fff;
+		}
+		nav.navbar{
+			font-family: $fontmenu;
+			background-color: rgba(000,000,000,0.35);
+			padding: 0.975rem 1rem; 
+			.btn-primary{
+				background-color: rgba(000,000,000,0.0);
+				border: none;
+			}
+			.btn{
+				text-transform: uppercase;
+				font-size: 12px;
+			}
 		}
 	}
 }
