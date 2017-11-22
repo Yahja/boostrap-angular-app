@@ -119,6 +119,8 @@ body {
       body header nav.navbar .menu-top .focus {
         box-shadow: none;
         text-decoration: line-through #50E3C2; }
+  body .carousel .carousel-indicators {
+    display: none; }
   body .carousel .carousel-inner .carousel-item .carousel-caption {
     top: 40%; }
     body .carousel .carousel-inner .carousel-item .carousel-caption h3 {
@@ -136,12 +138,30 @@ body {
         background-color: #333;
         cursor: pointer; }
   body .carousel .carousel-control-prev .carousel-control-prev-icon {
-    content: 'f2ca';
     background-image: none;
     background-color: #fff;
+    font-family: 'Ionicons';
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    color: #000; }
+    color: #000;
+    padding: 20px;
+    line-height: 2px;
+    text-indent: -6px; }
+    body .carousel .carousel-control-prev .carousel-control-prev-icon::before {
+      content: '\f2ca'; }
+  body .carousel .carousel-control-next .carousel-control-next-icon {
+    background-image: none;
+    background-color: #fff;
+    font-family: 'Ionicons';
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    padding: 20px;
+    line-height: 2px;
+    text-indent: -6px; }
+    body .carousel .carousel-control-next .carousel-control-next-icon::before {
+      content: '\f30f'; }
 
 /*# sourceMappingURL=styles.css.map */
