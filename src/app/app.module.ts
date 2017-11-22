@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { NgMenuTopComponent } from './ng-menu-top/ng-menu-top.component';
 import { NgbCarouselComponent } from './ngb-carousel/ngb-carousel.component';
+import { NgbWhyusComponent } from './ngb-whyus/ngb-whyus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgMenuTopComponent,
-    NgbCarouselComponent
+    NgbCarouselComponent,
+    NgbWhyusComponent
   ],
   imports: [
     BrowserModule,
