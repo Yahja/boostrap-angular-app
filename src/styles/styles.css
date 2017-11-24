@@ -91,6 +91,11 @@
   font-style: normal; }
 body {
   font-family: "Comfortaa", cursive; }
+  body h1 {
+    font-family: "Oleo Script"; }
+  body p {
+    font-size: .85rem;
+    color: #6B6B6B; }
   body header .social-icons {
     z-index: 1031;
     position: fixed;
@@ -165,20 +170,18 @@ body {
     text-indent: -6px; }
     body .carousel .carousel-control-next .carousel-control-next-icon::before {
       content: '\f30f'; }
-  body h1 {
-    font-family: "Oleo Script"; }
-    body h1:after {
-      position: absolute;
-      content: "";
-      height: 2px;
-      background-color: #50E3C2;
-      width: 96px;
-      top: 16%;
-      left: 41.5%; }
   body .why-us {
     padding: 50px 0px; }
     body .why-us .title-section {
       margin-bottom: 50px; }
+      body .why-us .title-section h1:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: #50E3C2;
+        width: 96px;
+        top: 16%;
+        left: 41.5%; }
     body .why-us .box-why {
       border: 1px solid #EEEEEE;
       padding: 10px;
@@ -194,8 +197,6 @@ body {
       body .why-us .box-why h2 {
         font-family: "Oleo Script"; }
       body .why-us .box-why p {
-        font-size: .85rem;
-        color: #6B6B6B;
         transition: all 0.11s ease-in-out; }
       body .why-us .box-why:hover {
         background-color: #50E3C2;
@@ -203,5 +204,35 @@ body {
         border: 1px solid white; }
         body .why-us .box-why:hover .icon, body .why-us .box-why:hover p {
           color: white; }
+  body .about-us {
+    background-color: #F8FBFA; }
+    body .about-us .right-box {
+      padding: 9rem 5rem; }
+      body .about-us .right-box h1:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: #50E3C2;
+        width: 96px;
+        left: 53.5%;
+        margin-top: 20px; }
+      body .about-us .right-box p {
+        line-height: 25px; }
+      body .about-us .right-box button {
+        border: 1px solid #50E3C2;
+        border-radius: 25px;
+        text-transform: uppercase;
+        color: #50E3C2;
+        font-size: 12px;
+        padding: 0px 20px;
+        line-height: 34px;
+        cursor: pointer;
+        background-color: white;
+        transition: all 0.5s ease-in-out; }
+        body .about-us .right-box button:hover {
+          background-color: #4A4A4A;
+          color: white;
+          text-decoration: none;
+          border-color: white; }
 
 /*# sourceMappingURL=styles.css.map */
