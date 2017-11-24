@@ -113,6 +113,8 @@ body {
       body header nav.navbar .menu-top .btn-primary {
         background-color: rgba(0, 0, 0, 0);
         border: none; }
+        body header nav.navbar .menu-top .btn-primary:hover {
+          cursor: pointer; }
       body header nav.navbar .menu-top .btn {
         text-transform: uppercase;
         font-size: 12px; }
@@ -163,5 +165,43 @@ body {
     text-indent: -6px; }
     body .carousel .carousel-control-next .carousel-control-next-icon::before {
       content: '\f30f'; }
+  body h1 {
+    font-family: "Oleo Script"; }
+    body h1:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: #50E3C2;
+      width: 96px;
+      top: 16%;
+      left: 41.5%; }
+  body .why-us {
+    padding: 50px 0px; }
+    body .why-us .title-section {
+      margin-bottom: 50px; }
+    body .why-us .box-why {
+      border: 1px solid #EEEEEE;
+      padding: 10px;
+      margin: 0px 20px;
+      background-color: white;
+      transition: all 0.5s ease-in-out; }
+      body .why-us .box-why .border {
+        padding: 30px; }
+      body .why-us .box-why .icon {
+        font-size: 42px;
+        color: #4A4A4A;
+        transition: all 0.11s ease-in-out; }
+      body .why-us .box-why h2 {
+        font-family: "Oleo Script"; }
+      body .why-us .box-why p {
+        font-size: .85rem;
+        color: #6B6B6B;
+        transition: all 0.11s ease-in-out; }
+      body .why-us .box-why:hover {
+        background-color: #50E3C2;
+        color: white;
+        border: 1px solid white; }
+        body .why-us .box-why:hover .icon, body .why-us .box-why:hover p {
+          color: white; }
 
 /*# sourceMappingURL=styles.css.map */

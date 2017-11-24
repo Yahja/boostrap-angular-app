@@ -6,6 +6,9 @@ $fontmenu:  'Open Sans', sans-serif;
 $font-title: 'Oleo Script';
 
 $magenta: #50E3C2;
+$gris: #4A4A4A;
+$grislight: #EEEEEE;
+$greymiddle: #6B6B6B;
 
 body{
 	font-family: $fontapp;
@@ -34,7 +37,10 @@ body{
 				width: 100%;
 				.btn-primary{
 					background-color: rgba(000,000,000,0.0);
-					border: none;
+          border: none;
+          &:hover{
+            cursor: pointer;
+          }
 				}
 				.btn{
 					text-transform: uppercase;
@@ -110,5 +116,55 @@ body{
 				}
 			}
 		}
+	}
+	h1{
+		font-family: $font-title;
+		&:after{
+		position: absolute;
+		content: "";
+		height: 2px;
+		background-color: $magenta;
+		width: 96px;
+		top: 16%;
+		left: 41.5%;
+		}
+	}
+	.why-us{
+		padding: 50px 0px;
+		.title-section{
+			margin-bottom: 50px;
+		}
+		.box-why{
+      border: 1px solid $grislight;
+      padding: 10px;
+      margin: 0px 20px;
+      background-color: white;
+      transition: all 0.5s ease-in-out;
+      .border{
+        padding: 30px;
+      }
+			.icon{
+				font-size: 42px;
+        color: $gris;
+        transition: all 0.11s ease-in-out;
+			}
+			h2{
+        font-family: $font-title;
+        // transition: all 0.5s ease-in-out;
+      }
+      p{
+        font-size: .85rem;
+        color: $greymiddle;
+        transition: all 0.11s ease-in-out;
+      }
+      &:hover{
+        background-color: $magenta;
+        color: white;
+        border: 1px solid white;
+        .icon, p{
+          color: white;
+        }
+      }
+    }
 	}
 }
