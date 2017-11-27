@@ -1,5 +1,5 @@
 @import 'fonts.scss';
-// @import 'ionicons/ionicons.scss';
+@import 'ionicons/ionicons.scss';
 
 $fontapp: 'Comfortaa', cursive;
 $fontmenu:  'Open Sans', sans-serif;
@@ -10,11 +10,13 @@ $gris: #4A4A4A;
 $grislight: #EEEEEE;
 $greymiddle: #6B6B6B;
 $bluelight: #F8FBFA;
+$greytext: #848484;
 
 body{
 	font-family: $fontapp;
 	h1{
 		font-family: $font-title;
+		text-transform: uppercase;
 	}
 	p{
 		font-size: .85rem;
@@ -174,7 +176,7 @@ body{
 	.about-us{
 		background-color: $bluelight;
 		.right-box{
-			padding: 9rem 5rem;
+			padding: 8rem 5rem;
 			h1{
 				&:after{
 				position: absolute;
@@ -206,6 +208,42 @@ body{
 					text-decoration: none;
 					border-color: white;
 				}
+			}
+		}
+	}
+	.features{
+		padding: 8rem 0px;
+		h1{
+			&:after{
+			position: absolute;
+			content: "";
+			height: 2px;
+			background-color: $magenta;
+			width: 96px;
+			left: 37.5%;
+			margin-top: 13px;
+			}
+		}
+		.service-features{
+      margin-top: 4rem;
+			p{
+				text-align: left;
+				font-size: 14px;
+				line-height: 24px;
+				color: $greytext;
+			}
+			h3{
+				text-align: left;
+				font-family: $font-title;
+				color: $greytext;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+			}
+			.icon{
+				color: $magenta;
+				font-size: 32px;
+				margin-right: 20px;
+				line-height: 12px;
 			}
 		}
 	}
