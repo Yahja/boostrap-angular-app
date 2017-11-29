@@ -13,12 +13,12 @@ import { NgbWhyusComponent } from './ngb-whyus/ngb-whyus.component';
 import { NgbAboutusComponent } from './ngb-aboutus/ngb-aboutus.component';
 import { NgbFeaturesComponent } from './ngb-features/ngb-features.component';
 import { NgbLatestworkComponent } from './ngb-latestwork/ngb-latestwork.component';
-import { NgbAllworksComponent } from './ngb-allworks/ngb-allworks.component';
-import { NgbWebdesignComponent } from './ngb-webdesign/ngb-webdesign.component';
-import { NgbBrandingComponent } from './ngb-branding/ngb-branding.component';
-import { NgbGraphicComponent } from './ngb-graphic/ngb-graphic.component';
-import { NgbIdentityComponent } from './ngb-identity/ngb-identity.component';
-import { NgbPrintsComponent } from './ngb-prints/ngb-prints.component';
+import { NgbAllworksComponent } from './ngb-latestwork/ngb-allworks/ngb-allworks.component';
+import { NgbWebdesignComponent } from './ngb-latestwork/ngb-webdesign/ngb-webdesign.component';
+import { NgbBrandingComponent } from './ngb-latestwork/ngb-branding/ngb-branding.component';
+import { NgbGraphicComponent } from './ngb-latestwork/ngb-graphic/ngb-graphic.component';
+import { NgbIdentityComponent } from './ngb-latestwork/ngb-identity/ngb-identity.component';
+import { NgbPrintsComponent } from './ngb-latestwork/ngb-prints/ngb-prints.component';
 
 import { NgbNotfoundComponent } from './ngb-notfound/ngb-notfound.component';
 

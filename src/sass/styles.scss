@@ -1,16 +1,10 @@
 @import 'fonts.scss';
 @import 'ionicons/ionicons.scss';
+@import 'colors.scss';
 
 $fontapp: 'Comfortaa', cursive;
 $fontmenu:  'Open Sans', sans-serif;
 $font-title: 'Oleo Script';
-
-$magenta: #50E3C2;
-$gris: #4A4A4A;
-$grislight: #EEEEEE;
-$greymiddle: #6B6B6B;
-$bluelight: #F8FBFA;
-$greytext: #848484;
 
 body{
 	font-family: $fontapp;
@@ -212,7 +206,7 @@ body{
 		}
 	}
 	.features{
-		padding: 8rem 0px;
+		padding: 8rem 0rem 4rem 0rem;
 		h1{
 			&:after{
 			position: absolute;
@@ -244,6 +238,40 @@ body{
 				font-size: 32px;
 				margin-right: 20px;
 				line-height: 12px;
+			}
+		}
+	}
+	.latest-works{
+		@extend .bg-gradient;
+		padding-top: 4rem;
+		h1{
+			&:after{
+			position: absolute;
+			content: "";
+			height: 2px;
+			background-color: $magenta;
+			width: 96px;
+			left: 37.5%;
+			margin-top: 13px;
+			}
+		}
+		p{
+			margin: 1rem 0rem;
+		}
+		nav{
+      margin: 2rem 0rem;
+			a{
+        color: $gris;
+        font-size: 12px;
+        margin: 0rem 1rem;
+        &:hover{
+          color: $magenta;
+          text-decoration: underline;
+        }        
+			}
+			.active{
+        color: $magenta;
+        text-decoration: underline;
 			}
 		}
 	}
