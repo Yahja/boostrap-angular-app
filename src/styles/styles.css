@@ -3260,5 +3260,38 @@ body {
       body .latest-works nav .active {
         color: #50E3C2;
         text-decoration: underline; }
+    body .latest-works .box-works a {
+      width: 100%;
+      height: 100%;
+      background-color: #50E3C2;
+      float: left; }
+      body .latest-works .box-works a h4 {
+        position: absolute;
+        margin-top: 16rem;
+        margin-left: 1rem;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        color: white;
+        font-family: "Oleo Script";
+        font-size: 1.5rem;
+        letter-spacing: 1px; }
+      body .latest-works .box-works a span {
+        font-family: "Comfortaa", cursive;
+        color: white;
+        position: absolute;
+        margin-top: 18rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        opacity: 0; }
+      body .latest-works .box-works a img {
+        transition: all 0.5s ease-in-out; }
+      body .latest-works .box-works a:hover h4 {
+        color: white;
+        opacity: 1.0; }
+      body .latest-works .box-works a:hover span {
+        color: white;
+        opacity: 1.0; }
+      body .latest-works .box-works a:hover img {
+        opacity: 0.1; }
 
 /*# sourceMappingURL=styles.css.map */
