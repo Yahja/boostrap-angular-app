@@ -21,6 +21,7 @@ import { NgbIdentityComponent } from './ngb-latestwork/ngb-identity/ngb-identity
 import { NgbPrintsComponent } from './ngb-latestwork/ngb-prints/ngb-prints.component';
 
 import { NgbNotfoundComponent } from './ngb-notfound/ngb-notfound.component';
+import { NgbOurteamComponent } from './ngb-ourteam/ngb-ourteam.component';
 
 
 const appRoutes: Routes = [
@@ -49,7 +50,7 @@ const appRoutes: Routes = [
     NgbGraphicComponent,
     NgbIdentityComponent,
     NgbPrintsComponent, 
-    NgbNotfoundComponent
+    NgbNotfoundComponent, NgbOurteamComponent
   ],
   imports: [
     BrowserModule,

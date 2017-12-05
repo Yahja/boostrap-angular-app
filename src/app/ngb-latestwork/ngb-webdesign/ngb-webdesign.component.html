@@ -1,10 +1,26 @@
 <div class="p-4 float-left">
-  <a href="#">
+  <a (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="StrangerThings">
       <h4>Stranger Things</h4>
       <span>Web Design</span>
       <img src="../assets/images/portfolio/webdesign/webdesign-04.jpg" class="img-fluid">
   </a>
 </div>
+
+<div class="container-fluid">
+<div id="StrangerThings" [ngbCollapse]="isCollapsed" class="row">
+  <div class="card col">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-7">
+          <img src="../assets/images/portfolio/webdesign/stranger-01.jpg" class="img-fluid">
+        </div>
+        <div class="col-5">col-5</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 <div class="p-4 float-left">
   <a href="#">
     <h4>Madalynn Everton</h4>
