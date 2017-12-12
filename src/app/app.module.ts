@@ -6,6 +6,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { JsonpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { PageScrollConfig } from 'ng2-page-scroll';
+
+
 import { AppComponent } from './app.component';
 import { NgMenuTopComponent } from './ng-menu-top/ng-menu-top.component';
 import { NgbCarouselComponent } from './ngb-carousel/ngb-carousel.component';
@@ -59,9 +63,14 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }
-    )
+    ),
+    Ng2PageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor (){
+    PageScrollConfig.defaultDuration = 500;
+  }
+ }

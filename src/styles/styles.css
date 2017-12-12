@@ -3092,8 +3092,12 @@ body {
       body header nav.navbar .menu-top .btn-primary {
         background-color: rgba(0, 0, 0, 0);
         border: none; }
-        body header nav.navbar .menu-top .btn-primary:hover {
-          cursor: pointer; }
+        body header nav.navbar .menu-top .btn-primary a {
+          color: #fff; }
+          body header nav.navbar .menu-top .btn-primary a:hover {
+            text-decoration: line-through #50E3C2; }
+          body header nav.navbar .menu-top .btn-primary a:focus {
+            text-decoration: line-through #50E3C2; }
       body header nav.navbar .menu-top .btn {
         text-transform: uppercase;
         font-size: 12px; }
@@ -3237,7 +3241,8 @@ body {
         margin-right: 20px;
         line-height: 12px; }
   body .latest-works {
-    padding-top: 4rem; }
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
     body .latest-works h1:after {
       position: absolute;
       content: "";
@@ -3293,5 +3298,45 @@ body {
         opacity: 1.0; }
       body .latest-works .box-works a:hover img {
         opacity: 0.1; }
+  body .our-team {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    body .our-team h1:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: #50E3C2;
+      width: 96px;
+      left: 29.5%;
+      margin-top: 13px; }
+    body .our-team .team {
+      display: block; }
+      body .our-team .team a.box-team {
+        width: 84%;
+        height: 84%;
+        top: 8%;
+        left: 8%;
+        float: left;
+        background: #50E3C2;
+        opacity: 0.0;
+        z-index: 1;
+        position: absolute;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out; }
+        body .our-team .team a.box-team h4 {
+          color: white;
+          font-family: "Oleo Script";
+          text-decoration: underline;
+          margin-top: 50%; }
+        body .our-team .team a.box-team p {
+          color: white; }
+        body .our-team .team a.box-team i {
+          color: white;
+          font-size: 18px;
+          margin: 0.55rem; }
+          body .our-team .team a.box-team i:hover {
+            color: #4A4A4A; }
+        body .our-team .team a.box-team:hover {
+          opacity: 0.7; }
 
 /*# sourceMappingURL=styles.css.map */
